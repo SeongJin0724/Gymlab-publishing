@@ -10,11 +10,23 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="./css/index.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://kit.fontawesome.com/be7be41289.js"
       crossorigin="anonymous"
@@ -56,49 +68,49 @@
           <a href="javascript:void(0)">
             <img src="./img/menu.png" alt="menu" />
           </a>
-          <ul class="menu_container">
-            <li>
-              <a class="red" href="javascript:void(0)">Home</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">About Us</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">Services</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">Class</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">Blog</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">Trainer</a>
-            </li>
-            <li class="pages_list">
-              <a href="javascript:void(0)">Pages</a>
-              <ul class="sub_menu">
-                <li>
-                  <a href="javascript:void(0)">Services Details</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Blog Details</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Class Details</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">Faq's</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="javascript:void(0)">Contacts</a>
-            </li>
-            <button class="close_btn"><i class="fa-solid fa-x"></i></button>
-          </ul>
+            <ul class="menu_container active">
+              <li>
+                <a class="red" href="javascript:void(0)">Home</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">About Us</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Services</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Class</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Blog</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Trainer</a>
+              </li>
+              <li class="pages_list">
+                <a href="javascript:void(0)">Pages <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub_menu">
+                  <li>
+                    <a href="javascript:void(0)">Services Details</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Blog Details</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Class Details</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">Faq's</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Contacts</a>
+              </li>
+              <button class="close_btn"><i class="fa-solid fa-x"></i></button>
+            </ul>
+          </div>
         </nav>
-      </div>
     </header>
     <main>
       <!-- Slider main container -->
@@ -106,7 +118,7 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide" style="background-image: url(./img/banner1.png);">
+          <div class="swiper-slide">
             <div class="slide_text">
               <h1>
                 It's Never to late to Defend <br />
@@ -118,9 +130,9 @@
                 >Start Your Class</a
               >
             </div>
-            <!-- <img src="./img/banner1.png" alt="banner1" /> -->
+            <img src="./img/banner1.png" alt="banner1" />
           </div>
-          <div class="swiper-slide" style="background-image: url(./img/banner2.png);">
+          <div class="swiper-slide">
             <div class="slide_text">
               <h1>
                 It's Never to late to Defend <br />
@@ -132,9 +144,9 @@
                 >Start Your Class</a
               >
             </div>
-            <!-- <img src="./img/banner2.png" alt="banner2" /> -->
+            <img src="./img/banner2.png" alt="banner2" />
           </div>
-          <div class="swiper-slide" style="background-image: url(./img/banner3.png);">
+          <div class="swiper-slide">
             <div class="slide_text">
               <h1>
                 It's Never to late to Defend <br />
@@ -146,7 +158,7 @@
                 >Start Your Class</a
               >
             </div>
-            <!-- <img src="./img/banner3.png" alt="banner3" /> -->
+            <img src="./img/banner3.png" alt="banner3" />
           </div>
           ...
         </div>
@@ -157,27 +169,22 @@
       </div>
 
       <section class="about_section">
-        <div class="about_container">
-          <div class="about_img">
-            <img src="./img/about-one.png" alt="about-one" />
-            <img src="./img/woner.png" alt="woner" />
-          </div>
-          <div class="about_text">
-            <h4>ABOUT</h4>
-            <h2>Gymlab Fitness</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </p>
-            <a href="javascript:void(0)" class="about_btn">Read More..</a>
+        <div class="inner">
+          <div class="about_container">
+            <div class="about_img">
+              <img src="./img/about-one.png" alt="about-one" />
+            </div>
+            <div class="about_text">
+              <h4>ABOUT</h4>
+              <h2>Gymlab Fitness</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <a href="javascript:void(0)" class="about_btn">Read More..</a>
+            </div>
           </div>
         </div>
       </section>
@@ -185,26 +192,18 @@
       <section class="goal_section">
         <span>GOAL</span>
         <div class="inner">
-          <div class="goal_text">
-            <h2>
-              Choose <br />
-              Your Goal
-            </h2>
-            <p>
-              What are your goals? We will give you a detailed plan to help you
-              accomplish them!
-            </p>
-            <div class="goal_btn_container">
-              <button class="goal-button-prev">
-                <i class="fa-solid fa-angle-left"></i>
-              </button>
-              <button class="goal-button-next">
-                <i class="fa-solid fa-angle-right"></i>
-              </button>
+          <div class="goal_row">
+            <div class="goal_text">
+              <h2>
+                Choose <br />
+                Your Goal
+              </h2>
+              <p>
+                What are your goals? We will give you a detailed plan to help
+                you accomplish them!
+              </p>
             </div>
-          </div>
-          <div class="goal_slider">
-            <div class="goal_wrapper">
+            <div class="goal_slider">
               <div class="goal_slide">
                 <img src="./img/g-1.png" alt="g-1" />
                 <a href="javascript:void(0)">Weight Loss</a>
@@ -221,6 +220,14 @@
                 <img src="./img/g-1.png" alt="g-1" />
                 <a href="javascript:void(0)">Weight Loss</a>
               </div>
+              <div class="goal_slide">
+                <img src="./img/g-2.png" alt="g-2" />
+                <a href="javascript:void(0)">Functionl Training</a>
+              </div>
+              <div class="goal_slide">
+                <img src="./img/g-3.png" alt="g-3" />
+                <a href="javascript:void(0)">Nutrition</a>
+              </div>
             </div>
           </div>
         </div>
@@ -235,142 +242,61 @@
               SUCCESS <br />
               STORIES
             </h2>
-            <div class="stories_btn_container">
-              <button class="stories_prev">
-                <i class="fa-solid fa-angle-left"></i>
-              </button>
-              <button class="stories_next">
-                <i class="fa-solid fa-angle-right"></i>
-              </button>
-            </div>
           </div>
           <div class="stories_slider">
-            <div class="stories_wrapper">
-              <div class="stories_slide">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
-                <h3>Karen Paran</h3>
-                <h5>March 13, 2015</h5>
-              </div>
-              <div class="stories_slide">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
-                <h3>Brandon Miller</h3>
-                <h5>Feb 22, 2014</h5>
-              </div>
-              <div class="stories_slide">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
-                <h3>Brianna Stapleton</h3>
-                <h5>July 26, 2016</h5>
-              </div>
-              <div class="stories_slide">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
-                <h3>Andadson steve</h3>
-                <h5>Jun 16, 2015</h5>
-              </div>
-              <div class="stories_slide">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book.
-                </p>
-                <h3>Karen Paran</h3>
-                <h5>March 13, 2015</h5>
-              </div>
+            <div class="stories_slide">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <h3>Karen Paran</h3>
+              <h5>March 13, 2015</h5>
+            </div>
+            <div class="stories_slide">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <h3>Brandon Miller</h3>
+              <h5>Feb 22, 2014</h5>
+            </div>
+            <div class="stories_slide">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <h3>Brianna Stapleton</h3>
+              <h5>July 26, 2016</h5>
+            </div>
+            <div class="stories_slide">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <h3>Andadson steve</h3>
+              <h5>Jun 16, 2015</h5>
+            </div>
+            <div class="stories_slide">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <h3>Karen Paran</h3>
+              <h5>March 13, 2015</h5>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- <section class="review_section">
-        <img src="./img/test-m.png" alt="test-m" />
-        <div class="inner">
-          <span>Testimonials</span>
-          <h2>What Our Clients are Saying</h2>
-          <div class="review_slider">
-            <button class="review_prev">
-              <i class="fa-solid fa-angle-left"></i>
-            </button>
-            <button class="review_next">
-              <i class="fa-solid fa-angle-right"></i>
-            </button>
-            <div class="review_wrapper">
-              <div class="review_slide">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <span><img src="./img/ag-5.png" alt="ag-5" /></span>
-                <h3>Martin Smith</h3>
-                <h5>Co-founder</h5>
-              </div>
-              <div class="review_slide">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <span><img src="./img/ag-6.png" alt="ag-6" /></span>
-                <h3>Anna Taylor</h3>
-                <h5>Co-founder</h5>
-              </div>
-              <div class="review_slide">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <span><img src="./img/ag-7.png" alt="ag-7" /></span>
-                <h3>Andson steve</h3>
-                <h5>Co-founder</h5>
-              </div>
-              <div class="review_slide">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-                <span><img src="./img/ag-5.png" alt="ag-5" /></span>
-                <h3>John Pitarshon</h3>
-                <h5>Director</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
 
       <section class="social_section">
         <div class="inner">
@@ -484,6 +410,11 @@
     </footer>
   </body>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
   <script src="./js/swiper.js"></script>
+  <script src="./js/slick.js"></script>
   <script src="./js/index.js"></script>
 </html>
